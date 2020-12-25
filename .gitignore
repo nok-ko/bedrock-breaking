@@ -4,15 +4,15 @@
 build/
 out/
 lib/
+/gradlew
+/gradlew.bat
 
 # idea
-
 .idea/
 *.iml
 *.ipr
 *.iws
 
 # fabric
-
 run/
 minecraft/

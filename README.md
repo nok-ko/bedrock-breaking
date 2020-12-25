@@ -10,7 +10,7 @@ This mod has 2 non-loader dependencies ([Fabric Language Kotlin](https://www.cur
 ```json
 {
   "bedrock_breakers": [
-    "bedrockpickaxe:bedrock_pickaxe",
+    "bedrockbreaking:bedrock_pickaxe",
     "minecraft:diamond_pickaxe"
   ],
   "bedrock_drops": false,
@@ -37,7 +37,7 @@ Difficulty of breaking Bedrock is configurable, based on Minecraft hardness valu
 Any item can be made to break bedrock:
 ```json
   "bedrock_breakers": [
-    "bedrockpickaxe:bedrock_pickaxe",
+    "bedrockbreaking:bedrock_pickaxe",
     "minecraft:diamond_pickaxe"
   ]
 ```

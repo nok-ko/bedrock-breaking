@@ -1,6 +1,5 @@
-package me.nokko.bedrockpickaxe.tools
+package me.nokko.bedrockbreaking.tools
 
-import com.google.common.collect.ImmutableSet
 import net.minecraft.block.BlockState
 import net.minecraft.block.Blocks
 import net.minecraft.block.Material

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
 
-  "id": "bedrockpickaxe",
+  "id": "bedrock_breaking",
 
   "version": "${version}",
 
-  "name": "Bedrock Pickaxe",
-  "description": "A pickaxe that breaks bedrock. Don't fall!",
+  "name": "Bedrock Breaking",
+  "description": "Allows Bedrock to be broken, with or without a custom pickaxe item. Don't fall!",
   "authors": [
     "nokko"
   ],
@@ -17,18 +17,18 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/bedrockpickaxe/icon.png",
+  "icon": "assets/bedrockbreaking/icon.png",
 
   "environment": "*",
 
   "entrypoints": {
     "main": [
-      "me.nokko.bedrockpickaxe.BedrockPickaxe::init"
+      "me.nokko.bedrockbreaking.BedrockBreaking::init"
     ]
   },
 
   "mixins": [
-    "bedrockpickaxe.mixins.json"
+    "bedrock_breaking.mixins.json"
   ],
 
   "depends": {
@@ -44,8 +44,8 @@
 
   "custom": {
     "paradoxconfig": {
-      "package": "me.nokko.bedrockpickaxe.config",
-      "configs": ["BedrockPickaxeConfig"]
+      "package": "me.nokko.bedrockbreaking.config",
+      "configs": ["BedrockBreakingConfig"]
     }
   }
 }

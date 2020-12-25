@@ -1,8 +1,8 @@
-package me.nokko.bedrockpickaxe.mixin;
+package me.nokko.bedrockbreaking.mixin;
 
 import com.google.common.collect.ImmutableSet;
-import me.nokko.bedrockpickaxe.config.BedrockPickaxeConfig;
-import me.nokko.bedrockpickaxe.config.BedrockPickaxeDerivedConfig;
+import me.nokko.bedrockbreaking.config.BedrockBreakingConfig;
+import me.nokko.bedrockbreaking.config.BedrockBreakingDerivedConfig;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
@@ -24,9 +24,9 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 // Boo-hoo.
 
 public class AbstractBlockMixin {
-    float effectiveHardness = BedrockPickaxeConfig.INSTANCE.getBedrockEffectiveHardness();
-    boolean useEffectiveModifier = BedrockPickaxeConfig.INSTANCE.getUseEffectiveModifier();
-    ImmutableSet<Identifier> bedrockBreakerIDs = BedrockPickaxeDerivedConfig.INSTANCE.getBedrockBreakerIDs();
+    float effectiveHardness = BedrockBreakingConfig.INSTANCE.getBedrockEffectiveHardness();
+    boolean useEffectiveModifier = BedrockBreakingConfig.INSTANCE.getUseEffectiveModifier();
+    ImmutableSet<Identifier> bedrockBreakerIDs = BedrockBreakingDerivedConfig.INSTANCE.getBedrockBreakerIDs();
 
     @Inject(at = @At(value = "INVOKE_ASSIGN", shift = At.Shift.AFTER),
             method = "calcBlockBreakingDelta(" +

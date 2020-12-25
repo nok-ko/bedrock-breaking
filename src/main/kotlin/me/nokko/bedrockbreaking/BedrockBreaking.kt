@@ -1,6 +1,6 @@
-package me.nokko.bedrockpickaxe
+package me.nokko.bedrockbreaking
 
-import me.nokko.bedrockpickaxe.tools.BedrockPickaxeItem
+import me.nokko.bedrockbreaking.tools.BedrockPickaxeItem
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents
 import net.minecraft.block.Block
 import net.minecraft.block.BlockState
@@ -14,12 +14,12 @@ import net.minecraft.util.math.BlockPos
 import net.minecraft.util.registry.Registry
 import net.minecraft.util.registry.Registry.ITEM
 import net.minecraft.world.World
-import me.nokko.bedrockpickaxe.config.BedrockPickaxeConfig as cfg
+import me.nokko.bedrockbreaking.config.BedrockBreakingConfig as cfg
 
-const val modID = "bedrockpickaxe"
+const val modID = "bedrockbreaking"
 val BEDROCK_PICKAXE = BedrockPickaxeItem()
 
-class BedrockPickaxe {
+class BedrockBreaking {
     @Suppress("unused") // Pay the IDE Tax, peasant.
     fun init() {
         // This code runs as soon as Minecraft is in a mod-load-ready state.
