@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+
+  "id": "bedrockpickaxe",
+
+  "version": "${version}",
+
+  "name": "Bedrock Pickaxe",
+  "description": "A pickaxe that breaks bedrock. Don't fall!",
+  "authors": [
+    "nokko"
+  ],
+
+  "contact": {
+    "homepage": "https://nokko.me/",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/bedrockpickaxe/icon.png",
+
+  "environment": "*",
+
+  "entrypoints": {
+    "main": [
+      "me.nokko.bedrockpickaxe.BedrockPickaxe::init"
+    ]
+  },
+
+  "mixins": [
+    "bedrockpickaxe.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.16.x"
+  },
+
+  "suggests": {
+    "flamingo": "*"
+  },
+
+  "custom": {
+    "paradoxconfig": {
+      "package": "me.nokko.bedrockpickaxe.config",
+      "configs": ["BedrockPickaxeConfig"]
+    }
+  }
+}

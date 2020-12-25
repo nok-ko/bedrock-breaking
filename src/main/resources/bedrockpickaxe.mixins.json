@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "me.nokko.bedrockpickaxe.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "AbstractBlockMixin"
+  ],
+  "client": [
+    "AbstractBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
