@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "me.nokko.bedrockpickaxe.mixin",
+  "package": "me.nokko.bedrockbreaking.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "AbstractBlockMixin"

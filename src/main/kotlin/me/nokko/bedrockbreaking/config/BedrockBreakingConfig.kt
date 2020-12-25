@@ -1,10 +1,10 @@
-package me.nokko.bedrockpickaxe.config
+package me.nokko.bedrockbreaking.config
 
 import com.google.common.collect.ImmutableSet
 import io.github.redstoneparadox.paradoxconfig.config.ConfigCategory
 import net.minecraft.util.Identifier
 
-object BedrockPickaxeConfig: ConfigCategory("bedrockpickaxe.json") {
+object BedrockBreakingConfig: ConfigCategory("bedrockbreaking.json") {
         var bedrockEffectiveHardness: Float by option(50F, "bedrock_effective_hardness",
                 "How hard bedrock is to break with the appropriate tool, " +
                         "in terms of MC hardness. Default value: same hardness as obsidian.")
@@ -16,13 +16,13 @@ object BedrockPickaxeConfig: ConfigCategory("bedrockpickaxe.json") {
                 "Should tool effectiveness be considered? " +
                         "Tools other than the bedrock pickaxe that work on bedrock will be " +
                         "30% as speedy at breaking bedrock with this setting turned on.")
-        var bedrockBreakers: MutableList<String> by option(mutableListOf("bedrockpickaxe:bedrock_pickaxe"),
+        var bedrockBreakers: MutableList<String> by option(mutableListOf("bedrockbreaking:bedrock_pickaxe"),
                 "bedrock_breakers","A list of items that can break bedrock.")
 
 }
 
-object BedrockPickaxeDerivedConfig {
+object BedrockBreakingDerivedConfig {
         val bedrockBreakerIDs: ImmutableSet<Identifier> =
-                ImmutableSet.copyOf(BedrockPickaxeConfig.bedrockBreakers.map { Identifier(it) })
+                ImmutableSet.copyOf(BedrockBreakingConfig.bedrockBreakers.map { Identifier(it) })
 }
 
