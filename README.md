@@ -1,4 +1,4 @@
-![Logo](src/main/resources/assets/bedrockbreaking/icon.png)
+![Logo](https://cdn.modrinth.com/data/NxLIxRc5/icon.png)
 # Bedrock Breaking
 
 A Fabric mod that allows Bedrock to be broken. Much configuration!
